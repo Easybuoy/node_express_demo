@@ -13,4 +13,6 @@ app.get("/", function (req, res) {
 
 app.delete("/", (req, res) => {});
 
-app.listen(3000, () => console.log("app started"));
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, () => console.log("app started"));
